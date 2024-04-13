@@ -28,3 +28,38 @@ body {
   font-size: 56px;
   font-weight: bold;
 }
+.btn-div {
+  height: 480px;
+  background-color: #d2cdcd;
+  margin-top: 24px;
+  border-radius: 10px;
+  padding: 29px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+button {
+  height: 64px;
+  width: 101px;
+  border-radius: 10px;
+  border: none;
+  font-size: 40px;
+  font-weight: bold;
+}
+.reseti {
+  height: 64px;
+  width: 227px;
+  border-radius: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #378187;
+  border: none;
+}
+.toloba {
+  background-color: #c85402;
+}
+.del {
+  background-color: #378187;
+  color: #fff;
+}
