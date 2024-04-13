@@ -27,6 +27,8 @@ body {
   padding: 32px 25px;
   font-size: 56px;
   font-weight: bold;
+  /* overflow:hidden; */
+  /* text-overflow: ellipsis; */
 }
 .btn-div {
   height: 480px;
@@ -45,6 +47,8 @@ button {
   border: none;
   font-size: 40px;
   font-weight: bold;
+  box-shadow: 0 -4px #A79E91 inset;
+  cursor: pointer;
 }
 .reseti {
   height: 64px;
@@ -55,11 +59,14 @@ button {
   color: #fff;
   background-color: #378187;
   border: none;
+  box-shadow: 0 -4px #1B6066 inset;
 }
 .toloba {
   background-color: #c85402;
+  box-shadow: 0 -4px #873901 inset;
 }
 .del {
   background-color: #378187;
   color: #fff;
+  box-shadow: 0 -4px #1B6066 inset;
 }
