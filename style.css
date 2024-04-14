@@ -16,8 +16,56 @@ body {
 }
 .calc-div {
   height: 44px;
-  background-color: black;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
+.themediv {
+  text-transform: uppercase;
+  width: 142px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.h3 {
+  font-size: 12px;
+  font-weight: bold;
+}
+.num {
+  display: flex;
+  justify-content: space-around;
+}
+.thmbtn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 26px;
+  width: 71px;
+  background-color: #d2cdcd;
+  border-radius: 13px;
+}
+.thmbtn span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.span1 {
+  background-color: #d03f2f;
+  opacity: 0;
+}
+.span2 {
+  background-color: #c85402;
+  opacity: 1;
+}
+
+.span3 {
+  background-color: #00ded0;
+  opacity: 0;
+}
+
 .display {
   height: 128px;
   background-color: #eeeeee;
@@ -47,7 +95,7 @@ button {
   border: none;
   font-size: 40px;
   font-weight: bold;
-  box-shadow: 0 -4px #A79E91 inset;
+  box-shadow: 0 -4px #a79e91 inset;
   cursor: pointer;
 }
 .reseti {
@@ -59,7 +107,7 @@ button {
   color: #fff;
   background-color: #378187;
   border: none;
-  box-shadow: 0 -4px #1B6066 inset;
+  box-shadow: 0 -4px #1b6066 inset;
 }
 .toloba {
   background-color: #c85402;
@@ -68,5 +116,5 @@ button {
 .del {
   background-color: #378187;
   color: #fff;
-  box-shadow: 0 -4px #1B6066 inset;
+  box-shadow: 0 -4px #1b6066 inset;
 }
