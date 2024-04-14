@@ -3,12 +3,57 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root{
+  --bodycolor: #e6e6e6;
+  --displaycolor:#eeeeee;
+  --displaytextcolor: black;
+  --btndivcolor:#d2cdcd;
+  --resetcolor: #fff;
+  --restbackground-color: #378187;
+  --resetbox-shadow: 0 -4px #1b6066 inset;
+  --toliabackground-color: #c85402;
+  --toliabox-shadow: 0 -4px #873901 inset;
+  --deletbackground-color: #378187;
+  --deletcolor: #fff;
+  --deletbox-shadow: 0 -4px #1b6066 inset;
+  --calccolor:black;
+}
+.tema1{
+  --bodycolor: #3A4663;
+  --displaycolor:#181F33;
+  --displaytextcolor: white;
+  --btndivcolor:#242D44;
+  --resetcolor: #fff;
+  --restbackground-color: #647198;
+  --resetbox-shadow: 0 -4px #414E73 inset;
+  --toliabackground-color: #D03F2F;
+  --toliabox-shadow: 0 -4px #93261A inset;
+  --deletbackground-color: #647198;
+  --deletcolor: #fff;
+  --deletbox-shadow: 0 -4px #414E73 inset;
+  --calccolor: white;
+}
+.tema2{
+  --bodycolor: #17062A;
+  --displaycolor:#1E0936;
+  --displaytextcolor: #FFE53D;
+  --btndivcolor:#331C4D;
+  --resetcolor: #fff;
+  --restbackground-color: #56077C;
+  --resetbox-shadow: 0 -4px #BE15F4 inset;
+  --toliabackground-color: #00DED0;
+  --toliabox-shadow: 0 -4px #6CF9F1 inset;
+  --deletbackground-color: #56077C;
+  --deletcolor: #fff;
+  --deletbox-shadow: 0 -4px #BE15F4 inset;
+  --calccolor: #FFE53D;
+}
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #e6e6e6;
+  margin-top: 20px;
+  background-color:var(--bodycolor);
 }
 .main-div {
   height: 712px;
@@ -16,7 +61,7 @@ body {
 }
 .calc-div {
   height: 44px;
-
+  color: var(--calccolor);
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -24,7 +69,6 @@ body {
 .themediv {
   text-transform: uppercase;
   width: 142px;
-
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -68,7 +112,8 @@ body {
 
 .display {
   height: 128px;
-  background-color: #eeeeee;
+  background-color:var(--displaycolor);
+  color: var(--displaytextcolor);
   border-radius: 10px;
   margin-top: 35px;
   text-align: end;
@@ -80,7 +125,7 @@ body {
 }
 .btn-div {
   height: 480px;
-  background-color: #d2cdcd;
+  background-color: var(--btndivcolor);
   margin-top: 24px;
   border-radius: 10px;
   padding: 29px;
@@ -104,17 +149,17 @@ button {
   border-radius: 10px;
   font-size: 28px;
   font-weight: bold;
-  color: #fff;
-  background-color: #378187;
+  color: var(--resetcolor);
+  background-color: var(--restbackground-color);
   border: none;
-  box-shadow: 0 -4px #1b6066 inset;
+  box-shadow: 0 -4px var(--resetbox-shadow) inset;
 }
 .toloba {
-  background-color: #c85402;
-  box-shadow: 0 -4px #873901 inset;
+  background-color: var(--toliabackground-color);
+  box-shadow: 0 -4px var(--toliabox-shadow) inset;
 }
 .del {
-  background-color: #378187;
-  color: #fff;
-  box-shadow: 0 -4px #1b6066 inset;
+  background-color: var(--deletbackground-color);
+  color: var(--deletcolor);
+  box-shadow: 0 -4px var(--deletbox-shadow) inset;
 }
